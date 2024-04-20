@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AcessoRápido</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,7 +38,66 @@
                     </div>
                 </div>
             </section>
+            <section class="servicos">
+                <h2 class="servicos__titulo">Serviços disponiveis</h2>
+                <!-- Slider main container -->
+                <div class="servicos__cards">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Bateria Carro.svg" alt="Bateria de um carro">
+                        <p class="servicos__cards__texto">Bateria</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Amortecedores 1.svg" alt="Amortecedores de um carro">
+                        <p class="servicos__cards__texto">Troca de amortecedores</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/troca-de-oleo.svg" alt="Óleo de motor de carro">
+                        <p class="servicos__cards__texto">Óleo de motor</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Alinhamento Roda 1.svg" alt="Alinhando um carro">
+                        <p class="servicos__cards__texto">Alinhamento rodas</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Bateria Carro.svg" alt="Bateria de um carro">
+                        <p class="servicos__cards__texto">Bateria</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Amortecedores 1.svg" alt="Amortecedores de um carro">
+                        <p class="servicos__cards__texto">Troca de amortecedores</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/troca-de-oleo.svg" alt="Óleo de motor de carro">
+                        <p class="servicos__cards__texto">Óleo de motor</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="servicos__cards__imagem" src="./img/Alinhamento Roda 1.svg" alt="Alinhando um carro">
+                        <p class="servicos__cards__texto">Alinhamento rodas</p>
+                    </div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
         </main>
     </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const servicos__cards = new Swiper('.servicos__cards', {
+            slidesPerView: 4,
+        });
+    </script>
 </body>
 </html>

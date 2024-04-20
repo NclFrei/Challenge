@@ -5,7 +5,8 @@
 :root {
     --cinza: #666666;
 
-    --fonte-primaria: "Inter", sans-serif;
+    --fonte-cabecalho: "Inter", sans-serif;
+    --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
@@ -119,4 +120,42 @@ body {
 .apresentacao__imagem__img {
     max-width: 100%; 
     height: auto;
+}
+
+.servicos {
+    padding: 1% 0%;
+}
+
+.servicos__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.2em;
+    padding: 2% 0 2% 0;
+}
+
+.servicos__cards {
+    margin: 0 6% 0 6%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid #ccc; 
+    border-left: 1px solid #ccc; 
+}
+
+.swiper-slide {
+    width: calc((100% - 80px) / 3); 
+    margin: 0 20px; 
+}
+
+.swiper-slide:last-child {
+    border-right: none; /* Remova a borda à direita do último card */
+}
+
+.servicos__cards__imagem{
+    border-radius: 10px;
+    width: 70%;
+}
+
+.servicos__cards__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3em;
+    font-weight: 600;
 }
