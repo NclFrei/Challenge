@@ -87,7 +87,6 @@ body {
     padding: 2% 15% 2% 0;
 }
 
-
 .apresentacao__botao__navegacao {
     display: flex;
     justify-content: center;
@@ -122,36 +121,35 @@ body {
     height: auto;
 }
 
-.servicos {
-    padding: 1% 0%;
-}
 
-.servicos__titulo{
+.servicos__titulo, .beneficios__titulo{
     font-family: var(--fonte-primaria);
     font-size: 1.2em;
     padding: 2% 0 2% 0;
 }
 
 .servicos__cards {
-    margin: 0 6% 0 6%;
-    display: flex;
-    justify-content: space-around;
-    border-right: 1px solid #ccc; 
-    border-left: 1px solid #ccc; 
+    margin: 0 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex; /* Adiciona display flex para os contêineres dos cards */
+    justify-content: space-between; /* Adiciona espaçamento entre os cards */
 }
 
 .swiper-slide {
     width: calc((100% - 80px) / 3); 
     margin: 0 20px; 
+    border-right: 1px solid transparent; /* Adiciona uma borda à direita em todos os slides */
 }
 
 .swiper-slide:last-child {
-    border-right: none; /* Remova a borda à direita do último card */
+    margin-right: 0; /* Remove a margem direita do último slide */
 }
 
 .servicos__cards__imagem{
     border-radius: 10px;
-    width: 70%;
+    width: 60%;
+    margin-bottom: 10px;
 }
 
 .servicos__cards__texto {
@@ -159,3 +157,58 @@ body {
     font-size: 1.3em;
     font-weight: 600;
 }
+
+.beneficios__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 0px 70px;
+}
+
+.beneficios__cards__conteudo {
+    width: auto;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* Estilização das imagens nos cards */
+.beneficios__cards__imagem {
+    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 50px;
+    margin-bottom: 10px; /* Espaçamento inferior para o texto */
+}
+
+.beneficios__cards__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.beneficios__cards__texto{
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+}
+
+.footer {
+    margin-top: 10%;
+    background-color: #0779b8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer__members {
+    list-style: none;
+    padding: 2%;
+}
+
+.footer__members li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
