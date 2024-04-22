@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(../Styles/index.css);
+
+:root {
+    --cinza: #666666;
+
+    --fonte-cabecalho: "Inter", sans-serif;
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
