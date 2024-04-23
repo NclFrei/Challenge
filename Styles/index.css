@@ -73,11 +73,11 @@
     background-color: #089CE2; 
     color: #fff; 
     border: none;
-    width: 30%; 
+    width: 35%; 
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 20px 5px;
+    padding: 20px 20px;
     text-decoration: none;
     font-family: var(--fonte-secundaria);
     margin-top: 22px;
@@ -140,7 +140,7 @@
     display: flex;
     flex-direction: row;
     gap: 10%;
-    padding: 0px 70px;
+    padding: 0px 70px 100px 70px;
 }
 
 .beneficios__cards__conteudo {
@@ -149,11 +149,10 @@
     flex-direction: column; 
 }
 
-
 .beneficios__cards__imagem {
     width: 30px; 
     height: 50px;
-    margin-bottom: 10px; /
+    margin-bottom: 10px; 
 }
 
 .beneficios__cards__titulo{
@@ -165,4 +164,46 @@
 .beneficios__cards__texto{
     font-family: var(--fonte-secundaria);
     font-size: 1em;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    gap: 10px;
+}
+
+.footer__texto{
+    padding: 20px 10%;
+}
+
+.footer__titulo{
+    font-weight: 600;
+}
+
+.footer__Subtitulo{
+    font-weight: 500;
+}
+
+.footer__membros {
+    font-weight: 400;
+}
+
+.footer__membros__destaque {
+    color: #0779b8;
+    font-weight: 500;
+}
+
+.footer__imagens{
+    padding: 20px 10%;
+}
+
+
+.logo__portoseguro, .logo__fiap {
+    padding: 0 10px;
+    width:20%;
 }
