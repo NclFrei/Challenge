@@ -1,0 +1,93 @@
+
+.header__chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.header__logoporto {
+    width: 180px; 
+    height: auto;
+    margin-left: 60px; 
+}
+
+
+.header__usuario {
+    display: flex;
+    align-items: center;
+}
+
+
+.texto__usuario {
+    font-family: var(--fonte-secundaria);
+    margin-right: 10px;
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.header__iconusuario {
+    width: 50px; 
+    height: auto; 
+}
+
+
+.chamados {
+    margin-top: 20px;
+    border: solid;
+    width: 15%;
+    height: 900px;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+
+.chamados__titulo {
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.chamados__item {
+    margin-bottom: 15px;
+}
+
+.chamados__data {
+    font-weight: bold;
+    margin: 10px;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.chamados__detalhes {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.chamados__texto__destaque {
+    margin-left: 40px;
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+}
+
+
+.chamados__texto {
+    margin-left: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+}
+
+.chamados__icons {
+    margin-left: 40px;
+    width: 30px;
+    margin-left: 20px;
+}
+
