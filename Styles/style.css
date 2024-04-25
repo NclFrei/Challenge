@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(../Styles/index.css);
+@import url(../Styles/login.css);
 
 :root {
     --cinza: #666666;
+    --azul-portoseguro: #089CE2;
 
     --fonte-cabecalho: "Inter", sans-serif;
     --fonte-primaria: "Krona One", sans-serif;

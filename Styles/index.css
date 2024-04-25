@@ -45,7 +45,6 @@
     align-items: center;
 }
 
-/* Estilo para o conteúdo da apresentação */
 .apresentacao__conteudo {
     width: 50%;
     display: flex;
@@ -70,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #089CE2; 
+    background-color: var(--azul-portoseguro); 
     color: #fff; 
     border: none;
     width: 35%; 
@@ -194,7 +193,7 @@
 }
 
 .footer__membros__destaque {
-    color: #0779b8;
+    color: var(--azul-portoseguro);
     font-weight: 500;
 }
 
