@@ -1,3 +1,7 @@
+.chat {
+    height: 90vh;
+}
+
 
 .header__chat {
     display: flex;
@@ -6,34 +10,28 @@
     padding: 10px 20px;
 }
 
-
 .header__logoporto {
-    width: 180px; 
+    width: 180px;
     height: auto;
-    margin-left: 60px; 
+    margin-left: 60px;
 }
-
 
 .header__usuario {
     display: flex;
     align-items: center;
 }
 
-
 .texto__usuario {
     font-family: var(--fonte-secundaria);
     margin-right: 10px;
     font-weight: bold;
-
     color: #333;
 }
 
-
 .header__iconusuario {
-    width: 50px; 
-    height: auto; 
+    width: 50px;
+    height: auto;
 }
-
 
 .chamados {
     margin-top: 20px;
@@ -44,14 +42,12 @@
     margin: 0px 20px;
 }
 
-
 .chamados__titulo {
     margin: 10px;
     font-size: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
 }
-
 
 .chamados__item {
     margin-bottom: 15px;
@@ -63,21 +59,18 @@
     font-family: var(--fonte-secundaria);
 }
 
-
 .chamados__detalhes {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-
 .chamados__texto__destaque {
     margin-left: 40px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--fonte-secundaria);
     font-weight: 500;
 }
-
 
 .chamados__texto {
     margin-left: 20px;
@@ -91,3 +84,58 @@
     margin-left: 20px;
 }
 
+
+.chat__conteudo{
+    display: flex;
+    height: 900px;
+}
+
+.chat__input-container {
+    width: 60%;
+    border-radius: 10px;
+    border: solid;
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chat__input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 98%;
+    font-size: 16px;
+    order: 1; 
+}
+
+.icone-direita {
+    padding: 1px;
+    order: 2; 
+    width: 2%;
+}
+
+/* Estilos para a imagem com legenda */
+.container__chat__cental {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    align-items: center;
+    gap:20px;
+}
+
+.imagem-central {
+    width: 200px; 
+    height: auto;
+}
+
+.legenda {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 16px; 
+}
