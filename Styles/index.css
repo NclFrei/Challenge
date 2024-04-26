@@ -114,7 +114,6 @@
 }
 
 .swiper-slide {
-    width: calc((100% - 80px) / 3); 
     margin: 0 20px; 
     border-right: 1px solid transparent; 
 }
@@ -205,4 +204,188 @@
 .logo__portoseguro, .logo__fiap {
     padding: 0 10px;
     width:20%;
+}
+
+
+@media (max-width: 1024px) {
+    .cabecalho__menu__link {
+        font-size: 14px;
+    }
+
+    .indentificacao__pagina,
+    .indentificacao__pagina__destaque {
+        font-size: 14px;
+        margin: 0px 0px 10px 0%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 25px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 20px;
+    }
+
+    .apresentacao__botao__navegacao {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .servicos__titulo,
+    .beneficios__titulo {
+        font-size: 18px;
+    }
+
+    .swiper-slide {
+        margin: none;
+        border-right: none;
+    }
+
+    .servicos__cards__texto {
+        font-size: 14px;
+    }
+
+    .servicos__cards__imagem {
+        /* Removendo tamanho fixo para permitir aumento */
+        width: auto;
+        max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    }
+
+    .beneficios__cards {
+        gap: 5%; /* Reduzindo o espaçamento entre os benefícios */
+        padding: 0px 50px 100px 50px; /* Ajustando o espaçamento interno */
+    }
+
+    .beneficios__cards__conteudo {
+        width: 20%; /* Definindo a largura de cada benefício */
+    }
+
+    .beneficios__cards__titulo {
+        font-size: 0.8em; /* Diminuindo o tamanho da fonte dos títulos */
+    }
+
+    .beneficios__cards__texto {
+        font-size: 0.9em; /* Diminuindo o tamanho da fonte do texto */
+    }
+}
+@media (max-width: 768px) {
+    .cabecalho__menu__link {
+        font-size: 12px; /* Diminuindo o tamanho da fonte do menu */
+    }
+
+    .indentificacao__pagina,
+    .indentificacao__pagina__destaque {
+        font-size: 12px; /* Diminuindo o tamanho da fonte da identificação da página */
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 20px; /* Diminuindo o tamanho da fonte do título de apresentação */
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 16px; /* Diminuindo o tamanho da fonte do texto de apresentação */
+    }
+
+    .apresentacao__botao__navegacao {
+        font-size: 16px; /* Diminuindo o tamanho da fonte dos botões de navegação */
+        width: 250px; /* Ajustando a largura dos botões de navegação */
+    }
+
+    .servicos__cards{
+        margin: 0px;
+    }
+    .servicos__cards,
+    .beneficios__cards {
+        padding: 10px 40px 20px 20px; /* Ajustando o espaçamento interno dos cards */
+    }
+
+    .servicos__cards__imagem {
+        width: 100%; /* Diminuindo o tamanho das imagens dos cards */
+    }
+
+    .servicos__cards__texto,
+    .beneficios__cards__texto {
+        font-size: 14px; /* Diminuindo o tamanho da fonte do texto dos cards */
+    }
+
+    .beneficios__cards__conteudo{
+        padding-right: 40px;
+    }
+
+    .footer {
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+        font-family: var(--fonte-secundaria);
+        font-size: 20px;
+        gap: 10px;
+        text-align: center; /* Alinhar o texto ao centro */
+    }
+
+    /* Remova os estilos das outras classes */
+    .footer__texto, .footer__titulo, .footer__Subtitulo, .footer__membros,
+    .footer__membros__destaque {
+        font-size: 18px;
+    }
+    .footer__imagens {
+        /* Remova ou ajuste os estilos conforme necessário */
+        display: none; /* Oculta elementos que não são textos */
+    }
+}
+
+@media (max-width: 530px) {
+    .cabecalho__menu__link{
+        display: none;
+    }
+
+    .cabecalho__imagem{
+        width: 30%;
+    }
+    .conteudo {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        background-color: #BED9E6;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo__texto{
+        padding: 0px 20px;
+    }
+
+    .apresentacao__imagem {
+        width: 80%;
+    }
+    .servicos__cards {
+        flex-direction: column;
+        margin-left: none;
+    }
+
+    .servicos__cards__imagem{
+        width: 150px;
+        max-width: none; /* Remova a restrição de largura máxima */
+    }
+    .servicos__titulo{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .swiper-slide {
+        padding: 0 40px;
+        margin: 0px 20px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display:none;
+    }
+
+    .beneficios{
+        display: none;
+    }
 }
