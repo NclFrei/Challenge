@@ -23,8 +23,22 @@
     font-size: 2em;
 }
 
+.link__volta__menu {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
 .Login__imagem {
     width: 80%;
+}
+
+.texto_para_voltar_menu{
+    font-family: var(--fonte-secundaria);
+    color:#089CE2;
+    text-decoration: none;
+    margin-left: 8px;
+
 }
 
 .sessao__direita {
@@ -36,7 +50,7 @@
 }
 
 .sessao__direita____card {
-    width: 30%;
+    width: 40%;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -83,3 +97,23 @@
 .botao__texto:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 1110px) {
+    .sessao__direita____card{
+        width: 50%;
+    }
+}
+@media (max-width: 768px){
+    .sessao__direita____card{
+        width: 40%;
+    }
+    .sessao__esquerda{
+        display: none;
+    }
+}
+@media (max-width: 530px){
+    .sessao__direita____card{
+        width: 50%;
+    }
+}
+

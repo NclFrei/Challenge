@@ -5,7 +5,11 @@
 }
 
 .cabecalho__imagem {
-    width: 10%;
+    width: 2.5%;
+    margin: 10px 50px 10px 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cabecalho__menu__link {
@@ -108,21 +112,31 @@
 .servicos__cards {
     margin: 0 30px;
     padding-bottom: 20px;
-    overflow: hidden;
-    display: flex; 
-    justify-content: space-between; 
+    overflow: hidden; /* Mantendo overflow: hidden */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 74%;
+    color: var(--azul-portoseguro); 
+}
+
+
+.swiper-button-prev {
+    left: 60px; 
+}
+
+.swiper-button-next {
+    right: 60px; /
 }
 
 .swiper-slide {
-    margin: 0 20px; 
-    border-right: 1px solid transparent; 
+    margin: 0 10px; /* Ajuste de margem entre os slides */
+    display: flex;
+    flex-direction: column;
 }
 
-.swiper-slide:last-child {
-    margin-right: 0; 
-}
-
-.servicos__cards__imagem{
+.servicos__cards__imagem {
     border-radius: 10px;
     width: 60%;
     margin-bottom: 10px;
@@ -134,11 +148,18 @@
     font-weight: 600;
 }
 
+
 .beneficios__cards {
     display: flex;
     flex-direction: row;
     gap: 10%;
     padding: 0px 70px 100px 70px;
+}
+
+.swiper-slide__beneficios{
+    margin: 0 10px; /* Ajuste de margem entre os slides */
+    display: flex;
+    flex-direction: column;
 }
 
 .beneficios__cards__conteudo {
@@ -211,6 +232,10 @@
     .cabecalho__menu__link {
         font-size: 14px;
     }
+    .cabecalho__imagem{
+        width: 3.5%;
+        margin-right: 0px;
+    }
 
     .indentificacao__pagina,
     .indentificacao__pagina__destaque {
@@ -231,41 +256,55 @@
         width: 300px;
     }
 
-    .servicos__titulo,
-    .beneficios__titulo {
-        font-size: 18px;
+    .servicos__cards {
+        margin-right: 50px;
+    
     }
 
-    .swiper-slide {
-        margin: none;
-        border-right: none;
+    .servicos__titulo {
+        font-size: 1.1em;
     }
 
-    .servicos__cards__texto {
-        font-size: 14px;
+    .swiper-wrapper{
+        align-items: center;
     }
 
     .servicos__cards__imagem {
-        /* Removendo tamanho fixo para permitir aumento */
-        width: auto;
-        max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+        width: 70%;
+    }
+
+    .servicos__cards__texto {
+        font-size: 18px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 67%;
+        color: var(--azul-portoseguro); 
+    }
+
+    .swiper-button-prev {
+        left: 40px; 
+    }
+
+    .swiper-button-next {
+        right: 15px; /
     }
 
     .beneficios__cards {
-        gap: 5%; /* Reduzindo o espaçamento entre os benefícios */
-        padding: 0px 50px 100px 50px; /* Ajustando o espaçamento interno */
+        padding: 0 0 50px 0; 
     }
 
     .beneficios__cards__conteudo {
-        width: 20%; /* Definindo a largura de cada benefício */
+        width: 60%; 
     }
 
     .beneficios__cards__titulo {
-        font-size: 0.8em; /* Diminuindo o tamanho da fonte dos títulos */
+        font-size: 0.8em; 
     }
 
     .beneficios__cards__texto {
-        font-size: 0.9em; /* Diminuindo o tamanho da fonte do texto */
+        font-size: 0.9em; 
     }
 }
 @media (max-width: 768px) {
@@ -286,31 +325,28 @@
         font-size: 16px; /* Diminuindo o tamanho da fonte do texto de apresentação */
     }
 
+    .servicos__cards__texto {
+        font-size: 16px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display:none;
+    }
+
+    .swiper-slide {
+        margin: 0;
+    }
+
     .apresentacao__botao__navegacao {
         font-size: 16px; /* Diminuindo o tamanho da fonte dos botões de navegação */
         width: 250px; /* Ajustando a largura dos botões de navegação */
     }
 
-    .servicos__cards{
-        margin: 0px;
-    }
-    .servicos__cards,
-    .beneficios__cards {
-        padding: 10px 40px 20px 20px; /* Ajustando o espaçamento interno dos cards */
-    }
 
-    .servicos__cards__imagem {
-        width: 100%; /* Diminuindo o tamanho das imagens dos cards */
-    }
-
-    .servicos__cards__texto,
     .beneficios__cards__texto {
         font-size: 14px; /* Diminuindo o tamanho da fonte do texto dos cards */
     }
 
-    .beneficios__cards__conteudo{
-        padding-right: 40px;
-    }
 
     .footer {
         background-color: #000;
@@ -341,13 +377,15 @@
     }
 
     .cabecalho__imagem{
-        width: 30%;
+        margin: 5px 0 5px 20px;
+        width: 5%;
     }
     .conteudo {
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         background-color: #BED9E6;
+        margin-right: 5%;
     }
 
     .apresentacao__conteudo {
@@ -359,30 +397,32 @@
         padding: 0px 20px;
     }
 
+    .apresentacao__botao{
+        margin-bottom: 10px;
+    }
+
     .apresentacao__imagem {
         width: 80%;
     }
-    .servicos__cards {
-        flex-direction: column;
-        margin-left: none;
+    
+    .servicos__titulo {
+        font-size: 18px;
     }
 
-    .servicos__cards__imagem{
-        width: 150px;
-        max-width: none; /* Remova a restrição de largura máxima */
+    .servicos__cards {
+        margin: 0 5px;
     }
-    .servicos__titulo{
-        margin-top: 20px;
-        font-size: 14px;
+
+    .servicos__cards__imagem {
+        width: 80%;
+    }
+
+    .servicos__cards__texto {
+        font-size: 15px;
     }
 
     .swiper-slide {
-        padding: 0 40px;
-        margin: 0px 20px;
-    }
-
-    .swiper-button-next, .swiper-button-prev{
-        display:none;
+        margin: 0; /* Ajuste de margem para telas menores */
     }
 
     .beneficios{
